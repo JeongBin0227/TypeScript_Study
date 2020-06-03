@@ -6,6 +6,7 @@ import Greetings from './Greeting';
 import MyForm from './myForm';
 import React from 'react';
 import ReducerSample from './ReducerSample';
+import { SampleProvider } from './SampleContext';
 import logo from './logo.svg';
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
    console.log(form) 
   }
   return (
-    <ReducerSample/>
+    <SampleProvider>
+      <ReducerSample/>
+    </SampleProvider>
   );
 }
 
