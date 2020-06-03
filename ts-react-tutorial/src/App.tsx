@@ -1,9 +1,11 @@
 import './App.css';
 
 import Counter from './counter';
+import Counter_reducer from './counter_reducer';
 import Greetings from './Greeting';
 import MyForm from './myForm';
 import React from 'react';
+import ReducerSample from './ReducerSample';
 import logo from './logo.svg';
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
    console.log(form) 
   }
   return (
-    <MyForm onSubmit={onSubmit}/>
+    <ReducerSample/>
   );
 }
 
