@@ -1,15 +1,17 @@
 import './App.css';
 
+import Counter from './counter';
 import Greetings from './Greeting';
+import MyForm from './myForm';
 import React from 'react';
 import logo from './logo.svg';
 
 function App() {
-  const onClick = (name:string) =>{
-    console.log(name)
+  const onSubmit = (form:{name:string; description:string}) =>{
+   console.log(form) 
   }
   return (
-    <Greetings name='리액트' mark='!'onClick={onClick}/>
+    <MyForm onSubmit={onSubmit}/>
   );
 }
 
