@@ -3,6 +3,7 @@
 // function sumArr(number:number[]):number{
 //     return number.reduce((acc,current) => acc+current,0)
 // }
+// type == interface
 class Circle {
     constructor(radius) {
         this.radius = radius;

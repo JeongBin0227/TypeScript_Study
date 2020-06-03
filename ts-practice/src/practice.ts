@@ -12,6 +12,7 @@ interface Shape{
     getArea():number
 }
 
+// type == interface
 class Circle implements Shape {
     radius:number
 
